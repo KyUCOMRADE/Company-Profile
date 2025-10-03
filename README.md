@@ -36,29 +36,5 @@ You can deploy this website easily to **GitHub Pages** or **Netlify** (instructi
    ```bash
    git clone [https://github.com/<your-username>/Danchega-Builders-Ltd.git](https://github.com/<your-username>/Danchega-Builders-Ltd.git)
 Open the project folder
-bash
-At mention
-cd Danchega-Builders-Ltd
-Launch the website
-Double-click index.html
-Or open using VS Code’s Live Server extension
-💌 Contact Form (Formspree Integration)
-This website uses Formspree.io to handle contact form submissions.
-
-Steps to use your own Formspree account:
-
-Go to Formspree.io and sign up.
-Create a new form and copy your Form Endpoint (e.g. https://formspree.io/f/xjkwprqv).
-Replace the endpoint in contact.html:
-html
-At mention
-<form action="[https://formspree.io/f/xjkwprqv"](https://formspree.io/f/xjkwprqv") method="POST" id="contact-form">
-All messages will then be delivered straight to your email inbox.
-
-🧰 Tech Stack
-Technology	Purpose
-HTML5	Structure and layout
-CSS3	Styling and responsive design
-JavaScript (Vanilla)	Interactivity and animations
-Formspree	Backend for contact form
-GitHub Pages / Netlify	Free hosting options
+```bash
+   cd Danchega-Builders-Ltd
