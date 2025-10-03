@@ -34,7 +34,7 @@ You can deploy this website easily to **GitHub Pages** or **Netlify** (instructi
 
 1. **Clone this repository**
    ```bash
-   git clone [https://github.com/<your-username>/Danchega-Builders-Ltd.git](https://github.com/<your-username>/Danchega-Builders-Ltd.git)
+   git clone [https://github.com/KyUCOMRADE/Company-Profile.git)
 Open the project folder
 ```bash
-   cd Danchega-Builders-Ltd
+   cd Company-Profile
