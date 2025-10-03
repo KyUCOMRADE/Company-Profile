@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Danchega Builders Ltd — request a quote, ask a question, or discuss your project.">
+  <title>Contact | Danchega Builders Ltd</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Danchega Builders Ltd logo" class="logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list" class="nav-toggle">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="services.html">Services</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main class="container content">
+    <section class="contact-header reveal">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Whether you have a question, need a quotation, or want to discuss your construction project — reach out using the form below or contact us directly.</p>
+    </section>
+
+    <!-- ===== Contact Form ===== -->
+    <form id="contact-form" action="https://formspree.io/f/xjkwprqv" method="POST" class="form-card reveal" novalidate>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">Send Message</button>
+        <div id="spinner" class="spinner hidden" aria-hidden="true"></div>
+      </div>
+    </form>
+
+    <!-- Success message -->
+    <div id="success-message" class="alert success hidden" role="status">
+      ✅ Your message has been sent successfully! We’ll get back to you soon.
+    </div>
+
+    <!-- ===== Company Details ===== -->
+    <section class="company-info reveal">
+      <h2>Company Details</h2>
+      <ul>
+        <li><strong>🏢 Company Name:</strong> Danchega Builders Ltd</li>
+        <li><strong>📞 Phone:</strong> 0723401698</li>
+        <li><strong>✉️ Email:</strong> danchegabuilding@gmail.com</li>
+        <li><strong>📍 Location:</strong> Iyego Kangema, Murang’a, Kenya</li>
+        <li><strong>📫 Postal Address:</strong> P.O BOX 779-10202</li>
+        <li><strong>🧾 Registration Number:</strong> PVT-8Z1K78L7</li>
+        <li><strong>🏗️ NCA Number:</strong> NCA/SS/2018/21579</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Danchega Builders Ltd. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

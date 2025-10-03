@@ -1,0 +1,420 @@
+/* ===============================
+   Danchega Builders Ltd Stylesheet
+   Modern Navy + Gold Theme
+   =============================== */
+
+/* --- Theme Colors --- */
+:root {
+  --navy: #0f172a;       /* Deep navy (main color) */
+  --muted: #6b7280;      /* Gray text */
+  --gold: #fbbf24;       /* Accent gold */
+  --bg: #f3f4f6;         /* Light background */
+  --card: #ffffff;       /* White cards */
+  --container: 1100px;   /* Max width for layout */
+}
+
+/* --- Global Reset & Base --- */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--navy);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* --- Utility Classes --- */
+.hidden {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ===============================
+   HEADER & NAVIGATION
+   =============================== */
+.site-header {
+  background: var(--card);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--navy);
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--gold);
+}
+
+.nav-link.active {
+  color: var(--gold);
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 0.25rem;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* ===============================
+   HERO SECTION
+   =============================== */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.hero-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-content p {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.hero-image .cover {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+  background: var(--navy);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #1e293b;
+}
+
+.btn-ghost {
+  border: 2px solid var(--navy);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--navy);
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-ghost:hover {
+  background: var(--navy);
+  color: #fff;
+}
+
+/* ===============================
+   ANNOUNCEMENT BANNER
+   =============================== */
+.banner {
+  background: linear-gradient(90deg, rgba(251,191,36,0.15), rgba(251,191,36,0.08));
+  padding: 1rem;
+  border-left: 5px solid var(--gold);
+  border-radius: 6px;
+  margin: 2rem 0;
+  font-weight: 500;
+}
+
+/* ===============================
+   PROJECT CARDS
+   =============================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.12);
+}
+
+.card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+/* ===============================
+   SERVICES SECTION
+   =============================== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: var(--card);
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-left: 4px solid var(--gold);
+}
+
+/* ===============================
+   CONTACT FORM
+   =============================== */
+.form-card {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 0.75rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--gold);
+  border-color: var(--gold);
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.spinner {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 3px solid rgba(0,0,0,0.06);
+  border-top-color: var(--navy);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.alert {
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.alert.success {
+  background: #ecfdf5;
+  border: 1px solid #bbf7d0;
+  color: #065f46;
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+.site-footer {
+  background: var(--navy);
+  color: #fff;
+  padding: 1.25rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/* ===============================
+   SCROLL TO TOP BUTTON
+   =============================== */
+.scroll-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  background: var(--navy);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: none;
+  transition: background 0.3s;
+}
+
+.scroll-top:hover {
+  background: #1e293b;
+}
+
+/* ===============================
+   REVEAL ANIMATIONS
+   =============================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all 600ms cubic-bezier(.2, .9, .4, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+   =============================== */
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .nav-toggle {
+    display: inline-block;
+  }
+
+  .nav-list {
+    position: absolute;
+    right: 1rem;
+    top: 70px;
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-list.open {
+    display: flex;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image .cover {
+    height: 250px;
+  }
+}
